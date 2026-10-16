@@ -10,6 +10,8 @@ public class UiAutomation {
         WebDriver driver = new ChromeDriver();
         driver.get("https://www.saucedemo.com/");
         driver.manage().window().maximize();
+        String title = driver.getTitle();
+        System.out.println(title);
         driver.close();
     }
 }
