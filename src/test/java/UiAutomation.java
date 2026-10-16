@@ -12,6 +12,7 @@ public class UiAutomation {
         driver.manage().window().maximize();
         String title = driver.getTitle();
         System.out.println(title);
+        System.out.println(driver.getCurrentUrl());
         driver.close();
     }
 }
