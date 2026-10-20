@@ -21,11 +21,15 @@ public class UiAutomation {
 //        driver.navigate().back();
 //        driver.navigate().forward();
 //        driver.navigate().refresh();
-        driver.findElement(By.xpath("//a[contains(text(),'Facebook')]"));
-        boolean isdiplayed = driver.findElement(By.xpath("//div[contains(text(),'Sauce Labs Backpack')]")).isDisplayed();
-        System.out.println(isdiplayed);
-        boolean isenabled = driver.findElement(By.xpath("//div[contains(text(),'Sauce Labs Backpack')]")).isEnabled();
-        System.out.println(isenabled);
+//        driver.findElement(By.xpath("//a[contains(text(),'Facebook')]"));
+//        boolean isdiplayed = driver.findElement(By.xpath("//div[contains(text(),'Sauce Labs Backpack')]")).isDisplayed();
+//        System.out.println(isdiplayed);
+//        boolean isenabled = driver.findElement(By.xpath("//div[contains(text(),'Sauce Labs Backpack')]")).isEnabled();
+//        System.out.println(isenabled);
+//        Traversing
+//        driver.findElement(By.xpath("//select/child::option[1]")).click();
+//        driver.findElement(By.xpath("//select[@value='az']/parent::option[1]")).click();
+//        driver.findElement(By.xpath("//select[@option='za']/following-sibling::option")).click();
         driver.close();
     }
 }
