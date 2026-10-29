@@ -1,6 +1,9 @@
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.Select;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class UiAutomation {
 
@@ -26,10 +29,39 @@ public class UiAutomation {
 //        System.out.println(isdiplayed);
 //        boolean isenabled = driver.findElement(By.xpath("//div[contains(text(),'Sauce Labs Backpack')]")).isEnabled();
 //        System.out.println(isenabled);
+
 //        Traversing
 //        driver.findElement(By.xpath("//select/child::option[1]")).click();
 //        driver.findElement(By.xpath("//select[@value='az']/parent::option[1]")).click();
 //        driver.findElement(By.xpath("//select[@option='za']/following-sibling::option")).click();
+
+//        Keyboard action
+//        driver.findElement(By.xpath("loginbutton")).sendKeys(Keys.ENTER);
+
+//        Multiple elements
+//        List<WebElement> webElements = driver.findElements(By.xpath("//a"));
+
+//        Select multiple elements
+//        List<WebElement> webElements = driver.findElements(By.id("users"));
+//        for(WebElement el : webElements){
+//            if(el.getAttribute("value").equals("ABC") || el.getAttribute("value").equals("DEF")){
+//                el.click();
+//            }
+//        }
+
+//        select option from dropdown
+//        Select select = new Select(driver.findElement(By.xpath("//a")));
+//        List<WebElement> options = select.getOptions();
+//        for(WebElement option : options){
+//            if(option.getAttribute("value").equals("abc")){option.click();}
+//        }
+
+//        Javascript executor
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("windows.scrollBy(0,500)"); //down
+        js.executeScript("windows.scrollBy(0,-500)"); //up
+
+
         driver.close();
     }
 }
