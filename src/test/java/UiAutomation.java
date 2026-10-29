@@ -1,13 +1,20 @@
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Action;
 import org.openqa.selenium.support.ui.Select;
+import org.apache.commons.io.FileUtils;
 
+import javax.swing.*;
+import javax.swing.text.Utilities;
+import java.io.File;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+import org.openqa.selenium.interactions.Actions;
 
 public class UiAutomation {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
 
         System.setProperty("webdriver.chrome.driver","/Users/sukanya/IdeaProjects/selenium_java/src/test/resources/chromedriver");
 
@@ -57,10 +64,28 @@ public class UiAutomation {
 //        }
 
 //        Javascript executor
-        JavascriptExecutor js = (JavascriptExecutor) driver;
-        js.executeScript("windows.scrollBy(0,500)"); //down
-        js.executeScript("windows.scrollBy(0,-500)"); //up
+//        JavascriptExecutor js = (JavascriptExecutor) driver;
+//        js.executeScript("windows.scrollBy(0,500)"); //down
+//        js.executeScript("windows.scrollBy(0,-500)"); //up
 
+//        Screenshot
+//        TakesScreenshot screenshot = (TakesScreenshot)driver;
+//        File file = screenshot.getScreenshotAs(OutputType.FILE);
+//        File des = new File("D:/screenshot.png");
+//        FileUtils.copyFile(file, des);
+
+//        Action:
+//        Actions actions = new Actions(driver);
+//        actions.moveToElement(driver.findElement(By.id("user"))).perform(); //mouse hover
+//        actions.dragAndDrop("source webelement","des webelement").perform(); // drag and drop
+//        actions.contextClick(driver.findElement(By.id("user"))).perform(); // right click
+
+//        Alert
+//        Alert alert = driver.switchTo().alert();
+//        alert.accept();
+//        alert.dismiss();
+//        alert.sendKeys("abc");
+//        alert.getText();
 
         driver.close();
     }
