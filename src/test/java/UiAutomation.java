@@ -37,6 +37,7 @@ public class UiAutomation {
 //        driver.navigate().forward();
 //        driver.navigate().refresh();
 //        driver.findElement(By.xpath("//a[contains(text(),'Facebook')]"));
+
 //        boolean isdiplayed = driver.findElement(By.xpath("//div[contains(text(),'Sauce Labs Backpack')]")).isDisplayed();
 //        System.out.println(isdiplayed);
 //        boolean isenabled = driver.findElement(By.xpath("//div[contains(text(),'Sauce Labs Backpack')]")).isEnabled();
