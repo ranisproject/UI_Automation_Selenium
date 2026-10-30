@@ -104,7 +104,9 @@ public class UiAutomation {
 //        driver.switchTo().frame(0);
 //        driver.findElement(By.name("user-name")).sendKeys("standard_user");
 
-//        Waits
+//        Waits: implicit wait makes browser wait for certain amount of time, for an element available in DOM.
+//               explicit wait makes browser to wait until a specific condition is met,
+//               like elementIsClickable,elementToBeSelected, titleContains, urlContains, alertIsPresent
 //        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10)); //implicit wait
 //        WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(5));
 //        wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("abc"))); //explicit wait
