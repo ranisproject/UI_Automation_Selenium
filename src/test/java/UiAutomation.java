@@ -1,15 +1,19 @@
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Action;
-import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.*;
 import org.apache.commons.io.FileUtils;
 
 import javax.swing.*;
 import javax.swing.text.Utilities;
 import java.io.File;
 import java.io.IOException;
+import java.time.Duration;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Set;
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.interactions.Actions;
 
 public class UiAutomation {
@@ -86,6 +90,33 @@ public class UiAutomation {
 //        alert.dismiss();
 //        alert.sendKeys("abc");
 //        alert.getText();
+
+//        Window handling
+//        Set<String> windows = driver.getWindowHandles();
+//        String parentWindow = driver.getWindowHandle();
+//        for(String window : windows){
+//            if(!window.equals(parentWindow)) {
+//                driver.switchTo().window(window);
+//            }
+//        }
+
+//        Iframe
+//        driver.switchTo().frame(0);
+//        driver.findElement(By.name("user-name")).sendKeys("standard_user");
+
+//        Waits
+//        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10)); //implicit wait
+//        WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(5));
+//        wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("abc"))); //explicit wait
+//
+//        Wait wait1 = new FluentWait(driver).withTimeout(Duration.ofSeconds(5))
+//                .pollingEvery(Duration.ofMillis(500))
+//                .ignoring(Exception.class);
+
+
+
+
+
 
         driver.close();
     }
