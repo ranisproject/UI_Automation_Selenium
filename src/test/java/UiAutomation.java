@@ -22,7 +22,8 @@ public class UiAutomation {
 
         System.setProperty("webdriver.chrome.driver","/Users/sukanya/IdeaProjects/selenium_java/src/test/resources/chromedriver");
 
-        WebDriver driver = new ChromeDriver();
+        WebDriver driver = new ChromeDriver(); //To access in-built methods of webdriver for browser specific actions like, get(),getUrl,getWindowHandle,
+                                               //switchTo, findElement,navigate,manage
         driver.get("https://www.saucedemo.com/");
         driver.manage().window().maximize();
         String title = driver.getTitle();
