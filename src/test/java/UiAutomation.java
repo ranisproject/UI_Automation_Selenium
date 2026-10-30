@@ -22,7 +22,8 @@ public class UiAutomation {
 
         System.setProperty("webdriver.chrome.driver","/Users/sukanya/IdeaProjects/selenium_java/src/test/resources/chromedriver");
 
-        WebDriver driver = new ChromeDriver();
+        WebDriver driver = new ChromeDriver(); //To access in-built methods of webdriver for browser specific actions like, get(),getUrl,getWindowHandle,
+                                               //switchTo, findElement,navigate,manage
         driver.get("https://www.saucedemo.com/");
         driver.manage().window().maximize();
         String title = driver.getTitle();
@@ -36,6 +37,7 @@ public class UiAutomation {
 //        driver.navigate().forward();
 //        driver.navigate().refresh();
 //        driver.findElement(By.xpath("//a[contains(text(),'Facebook')]"));
+
 //        boolean isdiplayed = driver.findElement(By.xpath("//div[contains(text(),'Sauce Labs Backpack')]")).isDisplayed();
 //        System.out.println(isdiplayed);
 //        boolean isenabled = driver.findElement(By.xpath("//div[contains(text(),'Sauce Labs Backpack')]")).isEnabled();
@@ -114,11 +116,6 @@ public class UiAutomation {
 //        Wait wait1 = new FluentWait(driver).withTimeout(Duration.ofSeconds(5))
 //                .pollingEvery(Duration.ofMillis(500))
 //                .ignoring(Exception.class);
-
-
-
-
-
 
         driver.close();
     }
