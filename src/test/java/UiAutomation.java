@@ -117,11 +117,6 @@ public class UiAutomation {
 //                .pollingEvery(Duration.ofMillis(500))
 //                .ignoring(Exception.class);
 
-
-
-
-
-
         driver.close();
     }
 }
